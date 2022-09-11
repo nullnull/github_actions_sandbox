@@ -1,0 +1,9 @@
+name: scheduled
+on:
+  schedule:
+    - cron:  '* * * * *'
+jobs:
+  run-date:
+    runs-on: ubuntu-latest
+    steps:
+      - run: date
