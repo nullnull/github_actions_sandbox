@@ -1,13 +1,16 @@
 name: prettier
 
 runs:
+  using: composite
   steps:
     - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'yarn'
-      - name: Install
-        shell: bash
-        run: yarn --frozen-lockfile
-    - run: yarn prettier -w index.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'yarn'
+    - name: Install
+      shell: bash
+      run: yarn --frozen-lockfile
+    - name: prettier
+      shell: bash
+      run: yarn prettier -w index.js

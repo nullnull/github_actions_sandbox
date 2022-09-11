@@ -1,6 +1,7 @@
 name: update_foo_txt
 
 runs:
+  using: composite
   steps:
     - name: update_foo_txt
       shell: bash
