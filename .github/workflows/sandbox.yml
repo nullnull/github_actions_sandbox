@@ -13,11 +13,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: date > foo.txt
-      - name: Create New Branch and Commit
-        run: |
-          git checkout -b new-branch
-          git add .
-          git commit -m 'new commit from github actions'
-      - name: Create release pr
-        run: |
-          gh pr create -B main -t "Pull Request From Github Actions" -b ""
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
