@@ -1,7 +1,7 @@
-name: checkout
+name: sandbox
 on: [push]
 jobs:
-  echo-something:
+  run-checkout-and-ls:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
