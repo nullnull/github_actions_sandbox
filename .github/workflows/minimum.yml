@@ -1,4 +1,4 @@
-name: a
+name: minimum
 on: [push]
 jobs:
   echo-something:
