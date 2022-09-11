@@ -2,4 +2,6 @@ name: update_foo_txt
 
 runs:
   steps:
-    - run: date > foo.txt
+    - name: update_foo_txt
+      shell: bash
+      run: date > foo.txt
