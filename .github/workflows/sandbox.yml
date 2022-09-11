@@ -20,5 +20,5 @@ jobs:
           body: |
             this is body
           branch: "bot/foo-${{ github.sha }}"
-          base: main
+          base: master
           delete-branch: true
