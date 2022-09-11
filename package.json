@@ -1,0 +1,8 @@
+{
+  "name": "github_actions_sandbox",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:nullnull/github_actions_sandbox.git",
+  "author": "Katsuma Narisawa <katsuma.narisawa@gmail.com>",
+  "license": "MIT"
+}
