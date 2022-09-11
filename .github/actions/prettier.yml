@@ -1,0 +1,5 @@
+name: prettier
+
+runs:
+  steps:
+    - run: yarn prettier -w index.js
