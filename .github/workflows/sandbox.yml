@@ -19,6 +19,7 @@ jobs:
           title: "Pull Request from Github Actions!"
           body: |
             this is body
+          commit-message: this is commit message
           branch: "bot/foo-${{ github.sha }}"
           base: master
           delete-branch: true
