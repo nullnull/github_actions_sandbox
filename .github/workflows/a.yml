@@ -1,0 +1,7 @@
+name: a
+on: [push]
+jobs:
+  echo-something:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "fooo"
