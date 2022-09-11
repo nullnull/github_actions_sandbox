@@ -12,7 +12,7 @@ jobs:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v3
-      - run: date > foo.txt
+      - uses: ./.github/actions/update_foo_txt
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
         with:

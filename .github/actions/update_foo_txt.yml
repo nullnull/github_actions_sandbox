@@ -1,0 +1,5 @@
+name: update_foo_txt
+
+runs:
+  steps:
+    - run: date > foo.txt
